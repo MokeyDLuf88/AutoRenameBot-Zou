@@ -148,7 +148,7 @@ async def subtitle(client, message):
 async def video(client, message):
     if len(message.command) == 1:
         return await message.reply_text(
-            "**Gɪᴠᴇ Tʜᴇ Vɪᴅᴇᴏ Tɪᴛʟᴇ\n\nExᴀᴍᴩʟᴇ:- /setvideo Encoded by @Animes_Cruise**")
+            "**Gɪᴠᴇ Tʜᴇ Vɪᴅᴇᴏ Tɪᴛʟᴇ\n\nExᴀᴍᴩʟᴇ:- /setvideo Encoded by @Anime_Zou**")
     video = message.text.split(" ", 1)[1]
     await db.set_video(message.from_user.id, video=video)
     await message.reply_text("**✅ Vɪᴅᴇᴏ Sᴀᴠᴇᴅ**")
